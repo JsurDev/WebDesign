@@ -1,0 +1,68 @@
+.caja{
+    width: 500px;
+    height: 500px;
+    background: green;
+    margin: 10px;
+}
+
+.gradiente-linear{
+    background: linear-gradient(to top left,blue,aqua );
+}
+
+p::first-letter{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+p::first-line{
+    background: #c9a9cf;
+    font-size: 18px;
+    line-height: 50px;
+}
+
+a{
+    font-size: 50px;
+    &:hover{
+        background: rgb(224, 160, 160);
+        color: #c9a9cf;
+    }
+    &:active{
+        background: #000;
+    }
+
+    &:visited{
+        color:#858585;
+    }
+}
+
+.articulos{
+    p:hover{
+        background: #414141;
+        color:#fff;
+    }
+}
+
+.cajas{
+    div{
+        background: lightcyan;
+        height: 40px;
+        margin-bottom: 5px;
+
+        &:first-child{
+            background: green;
+        }
+
+        &:nth-child(2){
+            background:lightblue;
+        }
+
+        &:last-child{
+            background:lime;
+        }
+        
+        &:nth-last-child(2){
+            background:rgb(189, 121, 231);
+        }
+
+    }
+}

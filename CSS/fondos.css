@@ -1,0 +1,16 @@
+body{
+    background: gray;
+}
+
+.contenedor{
+    background: white;
+    background-image: url('../HTML/imagenes/falcon2.jpg');
+    background-repeat: no-repeat;
+    background-size: 800px;
+    background-position: top center;
+
+
+    width: 1000px;
+    height: 700px;
+
+}

@@ -1,0 +1,94 @@
+body{
+    background: #f2f2f2;
+}
+
+.contenedor {
+    width: 1000px; /* Define el ancho fijo del contenedor: 1000 píxeles */
+    margin: auto; /* Aplica márgenes automáticos a los lados izquierdo y derecho.Esto centra el contenedor horizontalmente dentro de su elemento padre.
+                     (Solo funciona si el ancho está definido, como arriba). */
+    padding: 20px 0; /* Agrega un espacio interno (padding):20px en la parte superior e inferior, y 0 a los lados. */
+}
+
+
+button,a{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 500; /*controla el grosor o peso del texto (qué tan “negrita” se ve la fuente).*/
+    display: inline-block;
+    padding: 15px 20px;
+    margin: 20PX;
+    border: none;
+    cursor:pointer;
+    transition: 0.1s ease-in all;
+}
+
+button:focus
+a:focus{
+    outline: 1px rgb(0, 0,0,1) solid;
+}
+
+.boton-1{
+    background: #531be0;
+    color: white;
+    &:hover{
+        background: #7e5fcd;
+    }
+}
+
+.boton-2{
+    background: #fa6420;
+    border-radius: 100px;
+    color: white;
+    &:hover{
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;    }
+}
+
+.boton-3{
+    background:none;
+    color:black;
+    border-radius: 5px;
+    border: 3px solid currentColor; /*quita las esquinas*/
+    &:hover{
+        background: black;
+        color: white;
+    }
+}
+
+.boton-4{
+    color:white ;
+    background: #41295a;
+    background: #654ea3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #eaafc8, #654ea3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 5px;
+}
+
+.boton-5{
+    background: #077307;
+    color: #fff;
+    box-shadow: 5px 5px #055805;
+    &:hover{
+        box-shadow: 2px 2px #055805;
+    }
+}
+
+.boton-6{
+    border-radius: 3px;
+    border: 1px solid #8f8f26;
+    color: black;
+    background: linear-gradient(0deg,#c3c32b 0%,#f1f1be 100%);
+    &:hover{
+    background: linear-gradient(0deg,#f1f1be 0%,#c3c32b 100%);
+    }
+    svg{
+        margin-right: 5px; /*Separamos el Icono del Texto*/
+    }
+}
+
+.boton-7{
+    color: #5839a0;
+    text-decoration: none;
+    border-radius: 3px;
+    &:hover{
+        background: #c8dcc8;
+    }
+}
