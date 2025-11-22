@@ -27,6 +27,20 @@ body{
     right: 0px;
 }
 
+.posicionada10{
+        background: rgb(73, 193, 195);
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}
+
+.posicionada9{
+    background: #ac3636;
+    position: sticky;
+    top: 0px;
+    left: 210px;
+}
+
 .posicionada3 {
     background: blue;
     position: absolute;
