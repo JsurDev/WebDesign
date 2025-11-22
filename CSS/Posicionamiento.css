@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #f2f2f2;
+}
+
+.caja{
+    width: 100px;
+    height: 100px;
+    background: #262626;
+    color: #fff;
+    font-size: 40px;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.posicionada{
+    background: rgb(73, 195, 73);
+    position: absolute;
+    /*position : static; */    
+    /*position : relative; */    
+    bottom: 0px;
+    right: 0px;
+}
+
+.posicionada3 {
+    background: blue;
+    position: absolute;
+    top: 180px;
+    left: 20px;
+    }
+
+.posicionada4{
+    background:yellow;
+    position: absolute;
+    top: 540px;
+    left:20px;
+}
+
+.posicionada5{
+    background:purple;
+    position: absolute;
+    top: 180px;
+    left:380px;
+}
+
+.caja-padre{
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
