@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: rgb(81, 73, 73);
+    font-family: 'REM',sans-serif;
+    color: #fff;
+}
+
+.contenedor{
+    width: 1000px;
+    margin: 50px auto;
+    text-align: center;
+    .titulo{
+        margin-bottom: 20px;
+    }
+    .galeria{
+        a{
+            color: aqua;
+            text-decoration: none;
+        }
+        figure{
+            width: 300px;
+            display: inline-block;
+            margin: 15px;
+            img{
+                width: 80%;
+                vertical-align: top;
+                border-radius: 8px;
+                filter: grayscale(100%);
+                transition: 0.3 ease all;
+                padding: 5px;
+                border: 1px solid transparent;
+            }
+            &:hover img{
+                filter: grayscale(0%);
+                border: 1px solid #fff;
+
+            }
+        }
+    }
+}
