@@ -11,10 +11,10 @@ body{
 
 .contenedor{
     width: 1000px;
-    margin: 50px auto;
+    margin: 50px auto;/*Margen 50 px arriba/abajo*/
     text-align: center;
     .titulo{
-        margin-bottom: 20px;
+        margin-bottom: 17px;
     }
     .galeria{
         a{
@@ -22,12 +22,12 @@ body{
             text-decoration: none;
         }
         figure{
-            width: 300px;
+            width:300px;
             display: inline-block;
             margin: 15px;
             img{
-                width: 80%;
-                vertical-align: top;
+                width: 75%;
+                vertical-align: top;/*alineando img hacia arriba*/
                 border-radius: 8px;
                 filter: grayscale(100%);
                 transition: 0.3 ease all;
