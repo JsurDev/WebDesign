@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(38, 38, 47);
+    font-family: 'Kedebideri', sans-serif;
+}
+
+header{
+    .logo{
+        text-align: center;
+        padding: 30px;
+        color: #fff;
+        background: rgb(38, 37, 37);
+    }
+}
+    .menu{
+        background: rgba(15, 16, 15, 0.467);
+        color: #fff;
+        margin-bottom: 20px;
+        padding: 7px;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        left: 0;
+
+        a{
+            color: #fff;
+            display: inline-block;
+            padding: 10px 20px;
+            &:hover{
+                color: rgb(244, 250, 245);
+                background: rgb(117, 117, 110);
+            }
+        }
+    }
+
+main{
+    width: 1000px;
+    margin: auto;
+    .titulo{
+        margin-bottom: 20px;
+    }
+    .post{
+        p{
+            line-height: 30px;
+        }
+    }
+}
