@@ -20,10 +20,10 @@ header{
         background: rgba(15, 16, 15, 0.467);
         color: #fff;
         margin-bottom: 20px;
-        padding: 7px;
+        padding: 5px;
         text-align: center;
         position: sticky;
-        top: 0;
+        top: 0;/*Cuando se mueve el menu no hay margin*/
         left: 0;
 
         a{
