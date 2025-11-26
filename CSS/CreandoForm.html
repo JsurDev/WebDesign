@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link 
+      href="https://fonts.googleapis.com/css2?family=Kedebideri:wght@400;500;600;700;800;900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" 
+      rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/CreandoForm.css">
+    <title>Formulario con CSS</title>
+</head>
+
+<body>
+    <main>
+        <div class="mensaje">
+            <h1>Hola!</h1>
+            <p>Enviaremos la respuesta ASAP</p>
+        </div>
+        <form action="" class="formulario">
+            <div class="grupo">
+                <label for="nombre">Nombre:
+                    <span class="leyenda">(obligatorio)</span>
+                    <input type="text" name="nombre" id="nombre" placeholder="Fulano">
+                </label>
+            </div>
+
+            <div class="grupo">
+                <label for="correo">Correo:
+                    <span class="leyenda">(obligatorio)</span>
+                    <input type="text" name="correo" id="correo" placeholder="correo@correo.com">
+                </label>
+            </div>
+
+            <div class="grupo">
+                <label for="pais">Pais:</label>
+                <select name="pais" id="pais">
+                    <option value="mexico">Guatemala</option>
+                    <option value="Belice">Belice</option>
+                    <option value="Peru">Peru</option>
+                </select>
+            </div>
+
+            <div class="grupo">
+                <label>Asunto:</label>
+                <label for="opcion1" class="radio">
+                    <input type="radio" name="opcion" id="opcion1" value="information">
+                    <span>Solicito Info</span>
+                </label>
+
+                <label for="opcion2" class="radio">
+                    <input type="radio" name="opcion" id="opcion2" value="contratacion">
+                    <span>Quiero contratarte</span>
+                </label>
+
+                <label for="opcion3" class="radio">
+                    <input type="radio" name="opcion" id="opcion3" value="otro">
+                    <span>Otro</span>
+                </label>
+
+            </div>
+            <div class="grupo">
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" id="mensaje" placeholder="Datos adicionales"></textarea>
+            </div>
+            <div class="grupo">
+                <label for="terminos" class="radio">
+                    <input type="checkbox" name="terminos" id="terminos">
+                    <span>Mas</span>
+                </label>
+            </div>
+            <button>Enviar </button>
+        </form>
+    </main>
+</body>
+
+</html>
