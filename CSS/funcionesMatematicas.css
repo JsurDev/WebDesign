@@ -1,0 +1,22 @@
+*{
+    background: rgb(178, 178, 224);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.caja{
+    background: rgb(76, 129, 76);
+    font-size: 23px;
+    height: 100px;
+    padding: 20px;
+    &.calc{
+            width: calc(50% -200px);
+    }   
+    &.min{
+            width: min(500px,50%);
+    }
+        &.min{
+            width: max(500px,50%);
+    }
+}
