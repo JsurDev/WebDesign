@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body  {
+    font-family: 'Noticia Text', serif;
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+
+    &::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: rgba(184, 184, 184, 0.1);
+        position: absolute;
+        top: 0;
+        left: 0;
+        backdrop-filter: blur(50px);
+        z-index: 0;
+    }
+}
+
+
+.contenedor {
+    position: relative;
+    z-index: 1;
+    /*background: gray;*/
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    padding: 40px 0;
+
+    .bio {
+        text-align: center;
+
+        .foto {
+            height: auto;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            border-radius: 100%;
+            margin-bottom: 20px;
+        }
+
+        .nombre {
+            margin-bottom: 5px;
+            font-size: 30px;
+        }
+    }
+
+    .links {
+        .link {
+            color: black;
+            border: 3px solid rgb(49, 48, 48);
+            border-radius: 10px;
+            text-align: center;
+            display: block;
+            margin-bottom: 15px;
+            padding: 5px 5px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 700;
+            transition: 0.1s ease all;
+            box-shadow:
+            1px 1px 0px 0px black,
+            2px 2px 0px 0px black,
+            3px 3px 0px 0px black,
+            4px 4px 0px 0px black;
+
+            transform: translate(-5px, -5px);
+
+            &:hover {
+                color: azure;/*cambia Color de letra*/
+                box-shadow: 0px 0px 0px 0px;
+                transform: translate(0px, 0px);
+
+            }
+
+            &.sitio-web:hover {
+                background: orange;
+            }
+
+            &.youtube:hover {
+                background: rgb(241, 47, 47);
+            }
+
+            &.instagram:hover {
+                background: rgb(244, 89, 161);
+            }
+
+            &.sitio-web2:hover {
+                background: rgb(127, 218, 143);
+            }
+        }
+    }
+}
+
+
+.contenedor .bio .descripcion{
+    font-size: 17px;
+    font-weight: 700;
+    padding-bottom: 8px;
+}
+
+img {
+    width: 50%;
+}
