@@ -23,11 +23,9 @@ body  {
     }
 }
 
-
 .contenedor {
     position: relative;
     z-index: 1;
-    /*background: gray;*/
     width: 90%;
     max-width: 700px;
     margin: auto;
