@@ -17,6 +17,15 @@ body{
     font-size: 35px;
     background: rgb(180, 227, 201);
 }
+.caja1{
+        border-radius: 3px;
+    padding: 20px;
+    color: #ca581a;
+    font-size: 35px;
+    background: rgb(180, 227, 201);
+}
+
+
 
 .contenedor{
     width: 90%;
@@ -26,6 +35,11 @@ body{
     padding: 40px;
     display: flex;
     gap: 40px;
+}
+.basis1{
+    .caja1{
+        flex-grow:1 ;
+    }
 }
 
 .basis{
@@ -47,6 +61,12 @@ body{
         }
     }
 
-
-    
-
+.basis{
+    .caja{
+        flex-basis: 400px;
+        flex-grow: 1;
+    }
+    .especial{
+        flex-shrink: 5;
+    }
+}
