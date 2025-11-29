@@ -70,3 +70,36 @@ body{
         flex-shrink: 5;
     }
 }
+
+.order{
+    .uno{
+        order: 4;
+    }
+    .dos{
+        order:3;
+    }
+    .tres{
+        order:2;
+    }
+    .cuatro{
+        order:1;
+    }
+}
+
+.align-self{
+    height: 700px;
+    align-items: start;
+
+    .uno{
+        align-self: stretch;
+    }
+    .dos{
+        align-self: start;
+    }
+    .tres{
+        align-self: center;
+    }
+    .cuatro{
+        align-self: end;
+    }
+}
