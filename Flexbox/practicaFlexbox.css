@@ -1,0 +1,28 @@
+*{
+    background: rgb(142, 142, 222);
+}
+
+.container{
+    background: rgb(114, 88, 61);
+    color: rgb(221, 214, 214);
+    padding: 6px;
+    border: 1px solid black;
+    display: flex;
+    flex-flow: row wrap;    
+    /*flex-wrap: wrap;*/
+    /*flex-wrap: wrap-reverse;*/
+    /*justify-content: start;*/
+    /*justify-content: space-around;*/
+    /*justify-content: space-between;*/
+
+    
+}
+
+.box{
+    border: 1px solid rgb(221, 233, 240);
+    font-size: 30px;
+    text-align: center;
+    margin: 18px;
+    width: 140px;
+
+}
