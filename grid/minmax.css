@@ -1,0 +1,10 @@
+.grid{
+    display: grid;
+    padding: 20px;
+    gap: 20px;
+   /*grid-template-columns:100px 100px 100px;*/
+   /*grid-template-columns:minmax(200px, 400px)100px 100px;*/
+   grid-template-columns:minmax(200px ,1fr) 100px 100px;
+
+   height: 90vw;
+}
