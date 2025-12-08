@@ -1,0 +1,121 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background: #f1eded;
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.grid{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);    
+    gap: 20px;
+    /*damos tamaño hacia abajo*/
+    grid-template-rows: auto 1fr auto;
+    min-height: 90vh;/*Ocupa el 90% de la vista posible*/
+}
+
+.header{
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;/*centra spacios arriba/abajo*/
+}
+
+.main{
+    grid-column: 1/ span 2;
+    background: white;
+    padding: 15px;
+    color: #000;
+    border-radius:10px ;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+
+    p{
+        line-height: 30px;
+    }
+    
+    .boton{
+        display:inline-block;
+        padding: 15px;
+        background: #547de2;
+        color: white;
+        border-radius: 15px;
+        text-decoration: none;
+        text-align: center;
+    }
+}
+
+.widgets{
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+
+    .widget{
+        background: rgb(149, 149, 149);
+        min-height: 100px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.aside{
+    background: #000;
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer{
+    grid-column: 1/-1;
+    padding: 30px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #929292;
+}
+
+.logo{
+    font-size: 45px;
+}
+
+.titulo{
+    font-size: 25px;
+}
+
+
+/*ESTILO A ETIQUETAS*/
+a{
+    text-decoration: none;
+    color: #547de2;
+    font-size: 15px;
+}
+
+nav{
+    display: flex;
+    gap: 20px;
+}
+
