@@ -1,0 +1,44 @@
+body {
+    background: #f2f2f2f2;
+    font-family: 'Arimo', 'Roboto', 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width:1000px) {
+        & {
+            background: #212020;
+            color: #fff;
+        }
+    }
+}
+
+.grid {
+    display: grid;
+    width: 90%;
+    margin: 40px 0;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+
+    h3 {
+        font-size: 30px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    @media screen and (max-width:1000px) {
+        & {
+            grid-template-columns: 1fr 1fr;
+
+            a {
+                color: red;
+            }
+        }
+    }
+
+    @media screen and (max-width:500px){
+        grid-template-columns: 1fr;
+    }
+
+}
