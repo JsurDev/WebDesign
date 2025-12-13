@@ -1,0 +1,22 @@
+body{
+    background: rgb(129, 128, 128);
+}
+
+div:has(p){
+    border: 5px solid rgb(171, 100, 100);
+    padding: 20px;
+    background-color: rgb(114, 123, 158);
+}
+
+label:has(input:checked){
+    color: green;
+}
+
+table:has(tr)+ p{
+    display: block;
+    color: green;
+}
+
+p{
+    display: none;
+}
