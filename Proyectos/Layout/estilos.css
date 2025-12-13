@@ -1,57 +1,59 @@
 *,
 *::after,
-*::before{
+*::before {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 
 }
 
-body{
+body {
     background: #f1eded;
     display: flex;
     justify-content: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.grid{
+.grid {
     width: 90%;
     max-width: 1000px;
     margin: 20px 0;
     display: grid;
-    grid-template-columns: repeat(3,1fr);    
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     /*damos tamaño hacia abajo*/
     grid-template-rows: auto 1fr auto;
-    min-height: 90vh;/*Ocupa el 90% de la vista posible*/
+    min-height: 90vh;
+    /*Ocupa el 90% de la vista posible*/
 }
 
-.header{
+.header {
     grid-column: 1/-1;
     display: flex;
     justify-content: space-between;
     padding: 20px;
     gap: 20px;
-    align-items: center;/*centra spacios arriba/abajo*/
+    align-items: center;
+    /*centra spacios arriba/abajo*/
 }
 
-.main{
+.main {
     grid-column: 1/ span 2;
     background: white;
     padding: 15px;
     color: #000;
-    border-radius:10px ;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: flex-start;
 
-    p{
+    p {
         line-height: 30px;
     }
-    
-    .boton{
-        display:inline-block;
+
+    .boton {
+        display: inline-block;
         padding: 15px;
         background: #547de2;
         color: white;
@@ -61,13 +63,13 @@ body{
     }
 }
 
-.widgets{
+.widgets {
     grid-column: 1/-1;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
 
-    .widget{
+    .widget {
         background: rgb(149, 149, 149);
         min-height: 100px;
         border-radius: 10px;
@@ -77,7 +79,7 @@ body{
     }
 }
 
-.aside{
+.aside {
     background: #000;
     color: white;
     padding: 15px;
@@ -88,7 +90,7 @@ body{
 
 }
 
-.footer{
+.footer {
     grid-column: 1/-1;
     padding: 30px 0;
     text-align: center;
@@ -98,24 +100,47 @@ body{
     color: #929292;
 }
 
-.logo{
-    font-size: 45px;
+.logo {
+    /*font-size: 45px;*/
+    font-size: clamp(30px,5vw,50px);/*Otra forma de manejarlo*/
+
 }
 
-.titulo{
+.titulo {
     font-size: 25px;
 }
 
 
 /*ESTILO A ETIQUETAS*/
-a{
+a {
     text-decoration: none;
     color: #547de2;
-    font-size: 15px;
+    /*font-size: 15px;*/
+    font-size: clamp(8px,3vw,14px);
 }
 
-nav{
+nav {
     display: flex;
     gap: 20px;
 }
 
+/*MEDIA QUERY*/
+@media screen and (max-width:500px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .logo {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width:750px){
+    .main{
+        grid-column: 1/-1;
+        align-items: stretch;
+    }
+    .aside{
+        grid-column: 1/-1;
+    }
+}
