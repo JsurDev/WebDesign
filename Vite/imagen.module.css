@@ -1,0 +1,13 @@
+.imagen{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 7px;
+    cursor: pointer;
+    &:hover{
+        background: #b66a6a;
+    }
+}
+
+.contador{
+    color: lime;
+}

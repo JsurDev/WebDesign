@@ -1,24 +1,18 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+import imagen from '../assets/bosque1.jpg'
+import CargarContador from '../contador';
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Juan Dev . . .!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+import '../estilos.css';
+import clases from '../imagen.module.css';
 
-setupCounter(document.querySelector('#counter'))
+
+console.log('Juan Dev');
+
+document.querySelector('#app').innerHTML=`
+<h1>Hey Juan Dev</h1>
+
+<img src="${imagen}" id="imagen" class="${clases.imagen}" alt="Imagen de un bosque" style="width: 300px; height: 200px;"/>
+<h2>Veces Clickeado: <span id="cuenta" class="${clases.contador}">0</span></h2>
+`;
+
+//debo ejecutar la funcion
+CargarContador();
