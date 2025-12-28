@@ -73,7 +73,6 @@ body  {
                 color: azure;/*cambia Color de letra*/
                 box-shadow: 0px 0px 0px 0px;
                 transform: translate(0px, 0px);
-
             }
 
             &.sitio-web:hover {
