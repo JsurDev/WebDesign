@@ -121,7 +121,7 @@
                     border-radius: 10px;
 
                     &.active{
-                        background: white;
+                        background: rgba(255, 255, 255,1);
                     }
                 }
             }
