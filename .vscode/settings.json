@@ -1,6 +1,6 @@
 {
-    "cSpell.words": [
-        "fotos"
-    ],
-    "livePreview.defaultPreviewPath": "/platzi/Practica-HAS/index.html"
+  "cSpell.words": ["fotos"],
+  "livePreview.defaultPreviewPath": "/platzi/Practica-HAS/index.html",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
 }

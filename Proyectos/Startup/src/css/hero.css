@@ -1,132 +1,160 @@
 .hero {
-    background: #2566E3;
-    background: linear-gradient(90deg, rgba(37, 102, 227, 1) 30%, rgba(31, 187, 140, 1) 80%);
-    display: grid;
-    grid-template-columns: 55% 45%;
-    gap: 20px;
-    border-radius: 10px;
-    color: #fff;
-    position: relative;
-    z-index: 1;
-    padding: 40px;
-    
-    .col-1{
+  background: #2566e3;
+  background: linear-gradient(
+    90deg,
+    rgba(37, 102, 227, 1) 30%,
+    rgba(31, 187, 140, 1) 80%
+  );
+  display: grid;
+  grid-template-columns: 55% 45%;
+  gap: 20px;
+  border-radius: 10px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  padding: 40px;
+
+  .col-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .titulo {
+      font-size: 45px;
+      font-weight: 400;
+      text-align: left;
+      margin: 0;
+    }
+    .descripcion {
+      font-size: 18px;
+      line-height: 160%;
+    }
+
+    .botones {
+      display: flex;
+      gap: 20px;
+
+      .transparente {
+        background: rgb(0, 0, 0, 0.2);
+        padding: 15px;
+        &:hover {
+          background: rgb(0, 0, 0, 0.4);
+        }
+      }
+      .secundario {
+        background: var(--azul-secundario);
+        border: 1px transparent;
+        &:hover {
+          border: 1.5px solid rgba(255, 255, 255, 0.5);
+        }
+      }
+    }
+
+    .estadisticas {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-size: 22px;
+      font-weight: 500;
+
+      p {
         display: flex;
-        flex-direction: column;
-        gap: 40px;
-
-        .titulo{
-            font-size: 45px;
-            font-weight: 400;
-            text-align: left;
-            margin: 0;
+        gap: 20px;
+        align-items: center;
+        &:nth-child(1) {
+          border-right: 1px solid #fff;
+          padding-right: 40px;
         }
-        .descripcion{
-            font-size: 18px;
-            line-height: 160%;
+      }
+      .icono {
+        display: block;
+        width: 24px;
+        height: 24px;
+        svg {
+          width: 100%;
+          height: 100%;
         }
+      }
+    }
+  }
 
-        .botones{
-            display: flex;
-            gap: 20px;
+  .col-2 {
+    position: relative;
 
-            .transparente{
-                background: rgb(0, 0, 0, 0.2);
-                padding: 15px;
-                &:hover{
-                    background: rgb(0, 0, 0, 0.4);
-                }
-            }
-            .secundario{
-                background: var(--zul-secundario);
-                border: 1px transparent;
-                &:hover{
-                    border:1.5px solid rgba(255,255,255,0.5);
-                }
-            }
+    .slidershow {
+      border-radius: 10px;
+      width: 99%;
+      background: black;
+      overflow: hidden; /*Oculta lo que sobrea a los lados*/
+      position: absolute;
+      margin-top: -20px;
+
+      .slides {
+        display: flex;
+        flex-wrap: nowrap; /*Me aseguro que las imagenes se pongan a la derecha*/
+
+        .slide {
+          min-width: 100%;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            vertical-align: top;
+          }
         }
+      }
 
-        .estadisticas{
-            display: flex;   
-            align-items: center;  
-            gap: 20px;
-            font-size: 22px;
-            font-weight: 500;
+      .indicadores {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        position: absolute;
+        bottom: 17px;
+        left: 0;
 
-            p{
-                display: flex;
-                gap: 20px;
-                align-items: center;
-                 &:nth-child(1){
-                    border-right: 1px solid #fff;
-                    padding-right: 40px;
-                 }
-            }
-            .icono{
-                display: block;
-                width: 24px;
-                height: 24px;
+        .indicador {
+          width: 25px;
+          height: 2px;
+          border: none;
+          background: rgb(255, 255, 255, 0.3);
+          transition: 0.3s ease all;
+          border-radius: 10px;
 
-                svg{
-                    width: 100%;
-                    height: 100%;
-                }
-            }
+          &.active {
+            background: rgba(255, 255, 255, 1);
+          }
         }
+      }
+    }
+  }
+
+  .overlay-video {
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    &.active {
+      display: flex;
     }
 
+    .video {
+      width: 90%;
+      max-width: 900px;
+      background: #fff;
 
-    .col-2{
-        position: relative;
-
-        .slidershow{
-            border-radius: 10px;
-            width: 99%;
-            background: black;
-            overflow: hidden;/*Oculta lo que sobrea a los lados*/
-            position: absolute;
-            margin-top: -20px;
-
-            .slides{
-                display: flex;
-                flex-wrap: nowrap;/*Me aseguro que las imagenes se pongan a la derecha*/
-
-                .slide{
-                    min-width: 100%;
-
-                    img{
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                        vertical-align: top;
-                    }
-                }
-            }
-
-            .indicadores{
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                gap :10px;
-                position: absolute;
-                bottom: 17px;
-                left: 0;
-
-                .indicador{
-                    width: 25px;
-                    height: 2px;
-                    border: none;
-                    background: rgb(255, 255, 255, 0.3);
-                    transition: 0.3s ease all;
-                    border-radius: 10px;
-
-                    &.active{
-                        background: rgba(255, 255, 255,1);
-                    }
-                }
-            }
-        }
+      iframe {
+        width: 100%;
+        vertical-align: top; /*quitamos un margin botton que tenia*/
+        aspect-ratio: 16/9;
+      }
     }
-
+  }
 }
-
