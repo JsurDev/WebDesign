@@ -1,0 +1,58 @@
+.precios {
+  margin-bottom: 100px;
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    .plan {
+      background: #fff;
+      border-radius: 5%;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+      border: 1px solid transparent;
+      transition: 0.3s ease all;
+
+      &:hover {
+        border: 1px solid var(--azul-primario);
+      }
+
+      .nombre {
+        font-size: 27px;
+        font-weight: 700;
+      }
+
+      .precio {
+        font-size: 27px;
+        font-weight: 700;
+        span {
+          font-size: 16px;
+          font-weight: 400;
+          color: rgba(0, 0, 0, 0.5);
+        }
+      } /*Termina Precio*/
+
+      .descripcion {
+        line-height: 150%;
+      }
+
+      .lista {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        li {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          .icono {
+            display: flex;
+            align-items: center;
+          }/*Centramos el Icono*/
+        }
+      }
+    }
+  }
+}

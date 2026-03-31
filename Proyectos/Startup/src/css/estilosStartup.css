@@ -22,7 +22,7 @@ a {
 .boton {
   display: inline-flex;
   padding: 10px 15px;
-  background: var(--aazul-primario);
+  background: var(--azul-primario);
   transition: 0.2s ease all;
   color: #fff;
   border: none;
@@ -44,7 +44,7 @@ a {
 
   &:hover {
     text-decoration: none;
-    background: var(--aazul-primario-hover);
+    background: var(--azul-primario-hover);
   }
 }
 
