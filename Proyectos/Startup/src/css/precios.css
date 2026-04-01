@@ -18,6 +18,16 @@
         border: 1px solid var(--azul-primario);
       }
 
+      &.destacado {
+        background: var(--azul-secundario);
+        color: #fff;
+        .precio {
+          span {
+            color: rgba(255, 255, 255, 0.5);
+          }
+        }
+      }
+
       .nombre {
         font-size: 27px;
         font-weight: 700;
@@ -50,7 +60,8 @@
           .icono {
             display: flex;
             align-items: center;
-          }/*Centramos el Icono*/
+            color: var(--azul-primario);
+          } /*Centramos el Icono*/
         }
       }
     }
