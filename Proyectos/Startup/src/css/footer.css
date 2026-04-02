@@ -1,7 +1,7 @@
 .footer {
   color: #fff;
   background: var(--azul-secundario);
-  padding: 20px;
+  padding: 21px;
   border-radius: 8px;
   margin-bottom: 30px;
   display: flex;
@@ -21,7 +21,7 @@
   .links {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /*si no caben pueden bajar next line*/
     a {
       color: #fff;
     }
