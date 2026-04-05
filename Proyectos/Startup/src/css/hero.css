@@ -158,4 +158,52 @@
       }
     }
   }
+
+  @media screen and (max-width: 768px) {
+    & {
+      display: flex;
+      flex-direction: column;
+      border-radius: 0;
+      gap: 20px;
+
+      .col-1 {
+        order: 2;
+
+        .titulo {
+          text-align: center;
+          font-size: 30px;
+        }
+        .descripcion {
+          text-align: center;
+        }
+        .botones {
+          justify-content: center;
+        }
+        .estadisticas {
+          flex-direction: column;
+          gap: 20px;
+          justify-content: center;
+          font-size: 16px;
+
+          p {
+            gap: 10px;
+            &:nth-child(1) {
+              padding-right: 0px;
+              border-right: none;
+            }
+          }
+        }
+      }
+
+      .col-2 {
+        order: 1;
+        display: flex;
+        justify-content: center;
+        .slidershow {
+          position: relative;
+          width: 60%;
+        }
+      }
+    }
+  }
 }
