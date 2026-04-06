@@ -103,7 +103,7 @@
         }
 
         .previews {
-          height: 300px;
+          height: 300px; /*Le ponemos un tamaño para que se muestre*/
         }
       }
     }
