@@ -6,3 +6,6 @@ import "../src/css/hero.css";
 import "../src/css/caracteristicas.css";
 import "../src/css/precios.css"
 import "../src/css/footer.css";
+import "../src/js/video.js";
+import "../src/js/slideshow.js";
+import "../src/js/caracteristicas.js";
