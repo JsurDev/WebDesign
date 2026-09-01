@@ -16,9 +16,15 @@ const LoginForm = ({ setSegundoEstado }) => {
     setContraseña(evento.target.value);
   };
 
+  const handleSubmit = (evento) => {
+    evento.preventDefault();
+
+    console.log("Enviado");
+  };
+
   return (
     <div className="login">
-      <form>
+      <form className="login" onSubmit={handleSubmit}>
         <h3>Iniciar Sesion</h3>
 
         <input
@@ -34,7 +40,7 @@ const LoginForm = ({ setSegundoEstado }) => {
           onChange={handleContraseña}
           value={contraseña}
         />
-        <button onClick={iniciarSesion}>Inciar Sesion</button>
+        <button type="submit">Inciar Sesion</button>
       </form>
     </div>
   );

@@ -1,0 +1,46 @@
+:root {
+  --body-background: #2d2f32;
+  --title-background: #3e5c76;
+  --card-background: #1d2d44;
+  --text-color: #e3ccd3;
+  --punkColor: #b3b9c1;
+  --btn-text-color: rgb(9, 8, 8);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  align-items: center;
+  text-shadow: 0 0 10px rgba(255, 94, 142, 0.3); /* Un leve brillo ayuda bastante */
+}
+
+.header {
+  h1,
+  h2 {
+    padding: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: var(--text-color);
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+}
+
+.header h3 {
+  padding: 5px;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: var(--punkColor);
+}

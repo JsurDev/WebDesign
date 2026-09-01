@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+:root {
+  --body-background: #2d2f32;
+  --title-background: #3e5c76;
+  --card-background: #1d2d44;
+  --text-color: #e3ccd3;
+  --punkColor: #b3b9c1;
+  --btn-text-color: rgb(220, 91, 115);
+}
+.contenedor-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 200px); /*200px 200px 200px*/
+  grid-template-areas:
+    "box-1 box-2 box-3 box-3"
+    "box-1 box-4 box-4 box-4"
+    "box-5 box-5 box-5 box-5";
+
+  .box {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: var(--body-background);
+    border-radius: 8px;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    min-height: 150px; /* Le damos una altura mínima elegante a cada tarjeta */
+    color: #ffd1dc; /* Rosa pastel/claro con alto contraste */
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px rgba(255, 94, 142, 0.3); /* Un leve brillo ayuda bastante */
+  }
+
+  .musicList {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  span {
+    display: inline-flex; /*Activamos flex dentro del span*/
+    align-items: center; /*centramos icono con texto*/
+    gap: 10px;
+    font-size: 16px;
+    color: rgb(66, 38, 43);
+  }
+
+  .boxSoundtrack {
+    background-color: var(--body-background);
+    border-radius: 8px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    min-height: 150px; /* Le damos una altura mínima elegante a cada tarjeta */
+  }
+
+  .soundtrackDiv h4 {
+    margin: 0;
+    white-space: nowrap; /* Mantiene el texto SOUNDTRACK en una sola línea */
+  }
+
+  .soundtrackDiv {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .linea {
+    flex-grow: 1;
+    border: none; /*Lo hice para eliminar los estilos por defecto HTML*/
+    border-top: 1px solid var(--text-color);
+    margin: 0; /*Elimina el espacio arriba/abajo */
+  }
+
+  .btnPlay {
+    border-radius: 3px;
+    background-color: var(--btn-text-color);
+    border: none !important;
+    padding: 5px 5px;
+    cursor: pointer;
+    display: inline-flex; /*Elemento uno seguido del otro sin salto*/
+    align-items: center; /*Al centro arriba/abajo*/
+    justify-content: center; /*al centro derecha/izquierda*/
+    gap: 5px;
+    font-weight: 600;
+  }
+
+  .playList {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .casseteIcon {
+    display: flex; /*Pedimos el control del icono*/
+    align-items: center; /*Align centro arriba/abajo*/
+    justify-content: center; /*alignt centro right/left*/
+  }
+
+  .imgCanva {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Llena el recuadro sin deformar la imagen */
+    border-radius: 8px;
+    display: block;
+  }
+
+  .conceptoContenedor {
+    display: flex;
+    flex-direction: column; /*H4 arraba y img abajo*/
+    align-items: center; /*Horizontal*/
+    justify-content: center; /*Verticalmente*/
+    gap: 11px;
+    width: 100%;
+    height: 100%;
+  }
+
+  /*Aplicamos solo al h4*/
+  .conceptoContenedor h4 {
+    align-self: flex-start;
+    margin: 10px 10px 5px 10px;
+    text-align: left;
+  }
+
+  .imgWrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-grow: 1; /*Ocupamos el espacio libre restante*/
+  }
+
+  .imgCocepto {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+
+  .imgPhilosophy {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+
+  .vectorLibre {
+    width: 100%;
+    height: 100%;
+    object-fit: inherit;
+  }
+
+  .nombreLista {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    color: var(--btn-text-color);
+    letter-spacing: 0.5px;
+    font-weight: 600;
+  }
+
+  .headerLista {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .listaMusica {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .canciones {
+    list-style-type: none; /*Eliminamos puntos que crea el LI*/
+    margin: 10px 0 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  /* Aplicamos Flexbox a cada fila LI */
+  .canciones li {
+    display: flex;
+    align-items: center; /* Alinea icono y texto verticalmente al centro */
+    justify-content: flex-start; /* Alinea todo el contenido hacia la izquierda */
+    gap: 10px; /* Espacio horizontal entre el icono de música y el enlace */
+  }
+
+  .canciones a span {
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s ease; /* Transición suave */
+  }
+
+  .canciones li a:hover span {
+    color: rgb(
+      229,
+      66,
+      96
+    ) !important; /* !important asegura sobreescribir cualquier otro estilo */
+  }
+
+  /*Cuando el tamaño cambie se reordena el layout*/
+  @media (max-width: 500px) {
+    .contenedor-grid {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "box-1"
+        "box-2"
+        "box-3"
+        "box-4"
+        "box-5";
+    }
+  }
+}
